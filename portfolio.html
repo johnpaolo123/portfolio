@@ -229,7 +229,7 @@
            ABOUT
         ════════════════════════════ */
         .about-me .container {
-            display: flex;
+            display: inline-flex;
             gap: 40px;
             align-items: flex-start;
         }
@@ -282,6 +282,7 @@
            EDUCATION
         ════════════════════════════ */
         .education .timeline {
+
             display: flex;
             flex-direction: column;
             gap: 0;
@@ -660,6 +661,20 @@
 
         /* ── responsive ── */
         @media (max-width: 768px) {
+        body{
+            display: grid;
+        }
+            .about-me .container .user {
+        margin: auto;
+        
+        }
+
+              .about-me .container {
+            display: inline;
+            gap: 40px;
+            align-items: center;
+        }
+
             .personal-info {
                 grid-template-columns: 1fr;
                 grid-template-rows: 80px auto auto;
